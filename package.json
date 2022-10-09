@@ -1,0 +1,25 @@
+{
+  "name": "tech-blog",
+  "version": "1.0.0",
+  "description": "14-MVC",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BrandyM98/tech-blog.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BrandyM98/tech-blog/issues"
+  },
+  "homepage": "https://github.com/BrandyM98/tech-blog#readme",
+  "dependencies": {
+    "console.table": "^0.10.0",
+    "inquirer": "file:.2.4"
+  }
+}
