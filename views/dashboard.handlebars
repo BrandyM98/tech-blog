@@ -2,16 +2,14 @@
 <nav class="navbar">
   <div class="container">
     <div class="navbar-brand">
-      <a class="navbar-item" href="../">
-        The Tech Blog
-      </a>
+      <a class="navbar-item" href="../">The Tech Blog</a>
       <span class="navbar-burger burger" data-target="navbarMenu"></span>
     </div>
     <div id="navbarMenu" class="navbar-menu">
       <div class="navbar-end">
-        <a class="navbar-item is-active" href="/">Home</a>
-        <a class="navbar-item">Dashboard</a>
+        <a class="navbar-item is-active">Home</a>
         {{#if logged_in}}
+        <a class="navbar-item" href="./dashboard">Dashboard</a>
         <a class="navbar-item" id="logout">Logout</a>
         {{else}}
         <a class="navbar-item" href="/login">Login</a>
