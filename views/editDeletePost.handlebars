@@ -1,20 +1,16 @@
-<!-- NAV -->
 <nav class="navbar">
   <div class="container">
     <div class="navbar-brand">
-      <a class="navbar-item" href="../">The Tech Blog</a>
-      <span class="navbar-burger burger" data-target="navbarMenu"></span>
+      <h1 class="navbar-item text-dark fs-1 fw-bold">Tech Talk</h1>
     </div>
-    <div id="navbarMenu" class="navbar-menu">
+    <div id="navbarMenu" class="navbar-menu text-dark fs-6 fw-bold">
       <div class="navbar-end">
-        <a class="navbar-item is-active">Home</a>
+        <a class="navbar-item is-active" href="/">Home</a>
+        <a class="navbar-item" href="/dashboard">Dashboard</a>
         {{#if logged_in}}
-        <a class="navbar-item">Dashboard</a>
         <a class="navbar-item" id="logout">Logout</a>
         {{else}}
-        <a class="navbar-item" href="/login">
-          Login
-        </a>
+        <a class="navbar-item" href="/login">Login</a>
         {{/if}}
       </div>
     </div>
@@ -22,10 +18,10 @@
 </nav>
 
 
-<section class="hero is-info is-small is-bold">
+<section class="hero bg-info is-small">
   <div class="hero-body">
-    <div class="container has-text-centered">
-      <h1 class="title">Edit Post</h1>
+    <div class="container text-center">
+      <h1 class="title text-dark">Edit Post</h1>
     </div>
   </div>
 </section>
@@ -37,26 +33,26 @@
         <div class="card-content">
           <div>
             <div class="has-text-right">
-              <h4 class="has-text-weight-semibold">Updated on {{formDate editPost.createdAt}}</h4>
+              <h4 class="fs-6 text-dark">Updated on {{formDate editPost.createdAt}}</h4>
             </div>
             <div class="m-2">
-              <h4 class="has-text-weight-semibold">Title</h4>
+              <h4 class="text-dark fs-4">Title</h4>
             </div>
             <input type="text" class="input is-info" id="title-input" value={{editPost.title}}>
             <div class="m-2">
-              <h4 class="has-text-weight-semibold">Content</h4>
+              <h4 class="text-dark fs-4">Content</h4>
             </div>
             <textarea class="textarea is-info" id="content-textarea">{{editPost.contents}}</textarea>
           </div>
-          <div class="update-delete-btns has-text-right mt-5">
-            <button class="button is-info" id="update-post">Update</button>
-            <button class="button is-danger" id="delete-post">Delete</button>
+          <div class="update-delete-btns mt-5">
+            <button class="button bg-info" id="update-post">Update</button>
+            <button class="button bg-danger" id="delete-post">Delete</button>
           </div>
         </div>
       </div>
 
       <div class="has-text-centered mt-5">
-        <h4 class="has-text-weight-semibold">Comments</h4>
+        <h4 class="text-dark fs-2">Comments</h4>
       </div>
 
       {{#each editPost.comments as |comments| }}
@@ -81,9 +77,9 @@
 
   <div class="modal-content">
     <div class="box">
-      <textarea class="textarea is-info" placeholder="Add a comment"></textarea>
+      <textarea class="textarea bg-info" placeholder="Add a comment"></textarea>
       <div class="has-text-right">
-        <button class="button is-primary mt-5" id="add-comment">Add Comment</button>
+        <button class="button bg-info text-dark mt-5" id="add-comment">Add Comment</button>
       </div>
     </div>
   </div>

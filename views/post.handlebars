@@ -1,15 +1,13 @@
-<!-- NAV -->
 <nav class="navbar">
   <div class="container">
     <div class="navbar-brand">
-      <a class="navbar-item" href="../">The Tech Blog</a>
-      <span class="navbar-burger burger" data-target="navbarMenu"></span>
+      <h1 class="navbar-item text-dark fs-1 fw-bold">Tech Talk</h1>
     </div>
-    <div id="navbarMenu" class="navbar-menu">
+    <div id="navbarMenu" class="navbar-menu text-dark fs-6 fw-bold">
       <div class="navbar-end">
         <a class="navbar-item is-active" href="/">Home</a>
-        {{#if logged_in}}
         <a class="navbar-item" href="/dashboard">Dashboard</a>
+        {{#if logged_in}}
         <a class="navbar-item" id="logout">Logout</a>
         {{else}}
         <a class="navbar-item" href="/login">Login</a>
@@ -19,14 +17,13 @@
   </div>
 </nav>
 
-<section class="hero is-info is-small is-bold">
+<section class="hero bg-info is-small">
   <div class="hero-body">
-    <div class="container has-text-centered">
-      <h1 class="title">Current Post</h1>
+    <div class="container text-center">
+      <h1 class="title text-dark">Current Post</h1>
     </div>
   </div>
 </section>
-
 
 <div class="card article mt-5">
   <div class="card-content">
@@ -44,10 +41,10 @@
 
 <div class="mt-5 has-text-centered">
   {{#if logged_in}}
-  <button class="button is-info js-modal-trigger" data-target="comment-modal" data-id="{{singlePost.id}}">Add
+  <button class="button bg-info js-modal-trigger" data-target="comment-modal" data-id="{{singlePost.id}}">Add
     Comment</button>
   {{else}}
-  <a href="/login" class="button is-info" id="comment-login">Add Comment</a>
+  <a href="/login" class="button bg-info" id="comment-login">Add Comment</a>
   {{/if}}
 </div>
 
@@ -72,7 +69,7 @@
     <div class="box">
       <input class="input is-info" placeholder="Add a comment" id="comment"></input>
       <div class="has-text-right">
-        <button class="button is-primary mt-5" id="add-comment">Add Comment</button>
+        <button class="button bg-info mt-5" id="add-comment">Add Comment</button>
       </div>
     </div>
   </div>
