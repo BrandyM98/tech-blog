@@ -1,18 +1,18 @@
 <!-- NAV BAR -->
-<nav class="navbar bg-success">
+<nav class="navbar navbar-dark bg-primary">
   <div class="container">
-    <div class="navbar-brand">
+    <div class="navbar-brand text-dark">
       <h1> The Tech Blog</h1>
       {{!-- <span class="navbar-burger burger" data-target="navbarMenu"></span> --}}
     </div>
     <div id="navbarMenu" class="navbar-menu">
       <div class="navbar-end">
-        <a class="navbar-item is-active"href="../">Home</a>
+        <a class="navbar-item text-dark is-active"href="../">Home</a>
         {{#if logged_in}}
-        <a class="navbar-item" href="./dashboard">Dashboard</a>
-        <a class="navbar-item" id="logout">Logout</a>
+        <a class="navbar-item text-dark"  href="./dashboard">Dashboard</a>
+        <a class="navbar-item text-dark" id="logout">Logout</a>
         {{else}}
-        <a class="navbar-item" href="/login">Login</a>
+        <a class="navbar-item text-dark" href="/login">Login</a>
         {{/if}}
       </div>
     </div>
