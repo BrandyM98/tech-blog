@@ -1,18 +1,18 @@
 <!-- NAV BAR -->
-<nav class="navbar navbar-dark bg-primary">
+<nav class="navbar">
   <div class="container">
-    <div class="navbar-brand text-dark">
-      <h1> The Tech Blog</h1>
-      {{!-- <span class="navbar-burger burger" data-target="navbarMenu"></span> --}}
+    <div class="navbar-brand">
+      <a class="navbar-item" href="../">Tech Blog</a>
+      <span class="navbar-burger burger" data-target="navbarMenu"></span>
     </div>
     <div id="navbarMenu" class="navbar-menu">
       <div class="navbar-end">
-        <a class="navbar-item text-dark is-active"href="../">Home</a>
+        <a class="navbar-item is-active" href="/">Home</a>
+        <a class="navbar-item">Dashboard</a>
         {{#if logged_in}}
-        <a class="navbar-item text-dark"  href="./dashboard">Dashboard</a>
-        <a class="navbar-item text-dark" id="logout">Logout</a>
+        <a class="navbar-item" id="logout">Logout</a>
         {{else}}
-        <a class="navbar-item text-dark" href="/login">Login</a>
+        <a class="navbar-item" href="/login">Login</a>
         {{/if}}
       </div>
     </div>
@@ -22,22 +22,21 @@
 <section class="hero is-info is-small is-bold">
   <div class="hero-body">
     <div class="container has-text-centered">
-      <h1 class="title">Current Posts</h1>
+      <h1 class="title">Current Post</h1>
     </div>
   </div>
 </section>
-
 
 <div class="container">
   <section class="articles">
     <div class="column is-8 is-offset-2">
       {{#each posts}}
       <div class="card article">
-        <div class="card-content">
+        <div class="card-content border border-dark border-3">
           <div>
             <h3><a href="./post/{{id}}">{{title}}</a></h3>
             <div class="has-text-right">
-              <h4 class="has-text-weight-semibold">Posted on {{formDate createdAt}}</h4>
+              <h4 class="fw-normal">Posted on {{formDate createdAt}}</h4>
             </div>
           </div>
           <div>

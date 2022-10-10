@@ -1,33 +1,5 @@
-:root {
-  --primary: #D3D3D3;
---dark: #025710;
-}
-
-* {
+/* * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-}
-
-
-body {
-  background-color: var(--primary);
-  color: var(--dark);
-  font-size: 20px;
-  line-height: 2.0;
-  font-family: 'Open Sans', sans-serif;
-}
-
-/* .navbar {
-  background-color: var(--dark);
-}
-
-.navbar h1 {
-  color: var(--primary);
-}
-
-
-.navbar-end {
-  color: var(--primary);
 } */
-
