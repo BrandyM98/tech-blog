@@ -18,8 +18,16 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
-/* Homepage */
-.navbar-brand {
-
+/* .navbar {
+  background-color: var(--dark);
 }
+
+.navbar h1 {
+  color: var(--primary);
+}
+
+
+.navbar-end {
+  color: var(--primary);
+} */
 
