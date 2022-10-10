@@ -1,11 +1,9 @@
-<!-- NAV BAR -->
 <nav class="navbar">
   <div class="container">
     <div class="navbar-brand">
-      <a class="navbar-item" href="../">Tech Blog</a>
-      <span class="navbar-burger burger" data-target="navbarMenu"></span>
+      <h1 class="navbar-item text-dark fs-1 fw-bold">The Tech Blog</h1>
     </div>
-    <div id="navbarMenu" class="navbar-menu">
+    <div id="navbarMenu" class="navbar-menu text-dark fs-6 fw-bold">
       <div class="navbar-end">
         <a class="navbar-item is-active" href="/">Home</a>
         <a class="navbar-item">Dashboard</a>
@@ -19,16 +17,16 @@
   </div>
 </nav>
 
-<section class="hero is-info is-small is-bold">
+<section class="hero bg-info is-small">
   <div class="hero-body">
-    <div class="container has-text-centered">
-      <h1 class="title">Current Post</h1>
+    <div class="container text-center">
+      <h1 class="title text-dark">Dashboard</h1>
     </div>
   </div>
 </section>
 
-<div class="has-text-centered is-half">
-  <button class="button is-primary mt-5 is-half js-modal-trigger" data-target="add-post-modal">Add Post</button>
+<div class="text-center is-half">
+  <button class="button bg-info mt-5 text-dark fs-6 fw-bold">Add New Post</button>
 </div>
 
 <div class="container">
@@ -36,17 +34,19 @@
     <div class="column is-8 is-offset-2">
       {{#each userPosts as |post| }}
       <div class="card article">
-        <div class="card-content border border-dark border-3">
+        <div class="card-content">
           <div>
             <h3><a href="./dashboard/{{post.id}}">{{post.title}}</a></h3>
             <div class="has-text-right">
-              <h4 class="fw-normal">Posted on {{formDate post.createdAt}}</h4>
+              <h4 class="has-text-weight-semibold">Posted on {{formDate post.createdAt}}</h4>
             </div>
           </div>
           <div>
             <p>{{post.contents}}</p>
           </div>
-          <div class="update-delete-div has-text-right"></div>
+          <div class="update-delete-div has-text-right">
+
+          </div>
         </div>
       </div>
       {{/each}}
@@ -57,7 +57,7 @@
 <div id="add-post-modal" class="modal">
   <div class="modal-background"></div>
   <div class="modal-content">
-    <div class="box">
+    <div class="box">   
       <input class="input is-info" type="text" placeholder="Title" id="modal-title-input">
       <textarea class="textarea is-info mt-5" placeholder="Content:" id="modal-content-textarea"></textarea>
       <div class="has-text-right">
@@ -65,11 +65,11 @@
       </div>
     </div>
   </div>
-</div>
 
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="/js/login.js"></script>
-<script src="/js/logout.js"></script>
-<script src="/js/modal.js"></script>
-<script src="/js/addPost.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="/js/login.js"></script>
+  <script src="/js/logout.js"></script>
+  <script src="/js/modal.js"></script>
+  <script src="/js/addPost.js"></script>

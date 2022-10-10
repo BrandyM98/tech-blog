@@ -1,11 +1,9 @@
-<!-- NAV BAR -->
 <nav class="navbar">
   <div class="container">
     <div class="navbar-brand">
-      <a class="navbar-item" href="../">Tech Blog</a>
-      <span class="navbar-burger burger" data-target="navbarMenu"></span>
+      <h1 class="navbar-item text-dark fs-1 fw-bold">The Tech Blog</h1>
     </div>
-    <div id="navbarMenu" class="navbar-menu">
+    <div id="navbarMenu" class="navbar-menu text-dark fs-6 fw-bold">
       <div class="navbar-end">
         <a class="navbar-item is-active" href="/">Home</a>
         <a class="navbar-item">Dashboard</a>
@@ -19,10 +17,10 @@
   </div>
 </nav>
 
-<section class="hero is-info is-small is-bold">
+<section class="hero bg-info is-small">
   <div class="hero-body">
-    <div class="container has-text-centered">
-      <h1 class="title">Current Post</h1>
+    <div class="container text-center">
+      <h1 class="title text-dark">Current Posts</h1>
     </div>
   </div>
 </section>
@@ -32,11 +30,11 @@
     <div class="column is-8 is-offset-2">
       {{#each posts}}
       <div class="card article">
-        <div class="card-content border border-dark border-3">
+        <div class="card-content">
           <div>
             <h3><a href="./post/{{id}}">{{title}}</a></h3>
             <div class="has-text-right">
-              <h4 class="fw-normal">Posted on {{formDate createdAt}}</h4>
+              <h4 class="has-text-weight-semibold">Posted on {{formDate createdAt}}</h4>
             </div>
           </div>
           <div>
