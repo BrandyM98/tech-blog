@@ -13,10 +13,10 @@ Comment.init(
     },
 
     contents: {
-      type: DataTypes.TEXT,
+      type: DataTypes.STRING,
       allowNull: false,
       validate: {
-        len: [1, 100],
+        len: [1],
       },
     },
 

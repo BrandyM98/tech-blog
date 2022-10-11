@@ -1,7 +1,11 @@
 [
   {
       "title": "Hello!",
-      "contents": "Hello guys! I am new here and am excited to learn more about coding!, but this pattern helps developers focus on a particular aspect of their application, one step at a time. The main goal of MVC is to split large applications into specific sections that have their own individual purpose. It also allows developers to logically structure applications in a secure way, which we will show in this tutorial. But first, let’s break down what each aspect of the pattern provides.",
-      "user_id": 1
+      "contents": "Hello guys! I am new here and am excited to learn more about coding!"
+  },
+  {
+      "title": "Hi!",
+      "contents": "Hello!! Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. "
   }
 ]
+
