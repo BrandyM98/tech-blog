@@ -14,7 +14,7 @@ This application is a CMS-style tech blog where developers can publish their blo
 
 ## Submission
 
-[Heroku Link]()
+[Heroku Link](https://murmuring-atoll-71811.herokuapp.com/)
 
 ## Usage
 This application starts in the vscode terminal. The following commands have to be ran.
