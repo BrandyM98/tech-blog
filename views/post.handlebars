@@ -25,7 +25,7 @@
   </div>
 </section>
 
-<div class="card article mt-5">
+<div class="card article mt-5 ms-2 me-2">
   <div class="card-content">
     <div>
       <div class="text-end">
@@ -49,7 +49,7 @@
 </div>
 
 {{#each singlePost.comments as |comments| }}
-<div class="card article mt-5">
+<div class="card article mt-5 ms-2 me-2">
   <div class="comments card-content">
     <div class="text-end">
       <h4 class="text-end fw-bold">Posted by {{user.user_name}} on {{formDate comments.createdAt}}</h4>
@@ -60,7 +60,6 @@
   </div>
 </div>
 {{/each}}
-
 
 
 <div id="comment-modal" class="modal">

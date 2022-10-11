@@ -8,7 +8,7 @@ const logout = async (event) => {
   if (response.ok) {
     document.location.replace("/login");
   } else {
-    alert("Uh-oh, something went wrong");
+    alert("Login Failed!");
   }
 };
 

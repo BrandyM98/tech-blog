@@ -47,7 +47,7 @@ router.get('/:id', async (req, res) => {
         );
 
         const editPost = post.get({ plain: true });
-            res.render('editDeletePost', {
+            res.render('edit-delete', {
                 editPost, 
             });
         } catch (err) {
