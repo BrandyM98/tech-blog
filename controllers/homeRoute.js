@@ -29,7 +29,7 @@ router.get('/login', (req, res) => {
   router.get('/signup',  (req, res)=> {
     try {
   
-      res.render('signUp');
+      res.render('signup');
       
     } catch (err) {
       console.log(err);
